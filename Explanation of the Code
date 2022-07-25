@@ -1,3 +1,8 @@
+##In our Project we make use of the Varaibles and terraform.tfvars file --> where in variables file the variables is declared for the main.tf file
+## In the terraform.tfvars file---> All the static values will be given here...SInce i do not have time to create different files, i have created all the resources and defined variables i one main.tf file..
+####for example: we can define the variables like var.resource_group_name.name
+
+
 # Once the file is ready for execution , 
 The first step is to Initialize our cloud provider i am using Azure so the azure cli must be installed and later
 1. Terraform Init---> This will initialize the directory and it will download all the dependencies, configuration that is required for our azure provider
