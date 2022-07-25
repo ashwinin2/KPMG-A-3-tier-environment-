@@ -9,6 +9,7 @@ terraform {
       version = "version of the Terraform"
     }
   }
+  Environment: staging
 }
 
 # In order to configure our Azure provider we can see use below code
