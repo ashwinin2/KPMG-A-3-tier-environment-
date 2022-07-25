@@ -1,6 +1,9 @@
 # first we will create an Terraform Directory #
 #later we can create this below Main.tf file for declaring our providers
-# In my case i am making use of Azure since we have worked on Azure cloud#
+# In my case i am making use of Azure since we have worked on Azure cloud
+###In our Project we make use of the Varaibles and terraform.tfvars file --> where in variables file the variables is declared for the main.tf file
+## In the terraform.tfvars file---> All the static values will be given here...SInce i do not have time to create different files, i have created all the resources and defined variables i one main.tf file..
+####for example: we can define the variables like var.resource_group_name.name
 
 terraform {
   required_providers {
