@@ -1,0 +1,11 @@
+# Once the file is ready for execution , 
+The first step is to Initialize our cloud provider i am using Azure so the azure cli must be installed and later
+1. Terraform Init---> This will initialize the directory and it will download all the dependencies, configuration that is required for our azure provider
+2. Terraform Plam----> This will preview our infrstructure plan that we were planning to create , like it shows 1 to add , mainly it shows like the resources that will be deployed in this phase.we can see what all resources will be deployed when we give Terraform apply command.
+3. Terraform Apply---> this will create the resources that is mentioned in the main.tf file
+#### SO this is how we can create the Environments .
+
+## so after this suppose if we need to Delete  the created infrastructure then we can make use of an "Terraform Destroy" command
+
+
+####### "Thank You Team for giving me Opportunity to explore myself in new things in small span of time i tried my best kindly ignore if i had made any mistakes".########
