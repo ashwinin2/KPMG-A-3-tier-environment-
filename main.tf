@@ -31,7 +31,7 @@ resource "azurerm_network_security_group" "Ashwini" {
 }
 
 resource "azurerm_virtual_network" "Ashwini" {
-  name                = "example-network"
+  name                = "Ashu-network"
   location            = azurerm_resource_group.Ashwini.location
   resource_group_name = azurerm_resource_group.Ashwini.name
   address_space       = ["10.0.0.0/16"] # Here address space is nothing but the Range of Ip Address ryt , so azure will assign the next availble Ip addr from this Addrs space to a resource in our Virtual network.
@@ -41,12 +41,12 @@ resource "azurerm_virtual_network" "Ashwini" {
   # So again here the subnets are nothing but a logical segment of a Virtual network where it is allocated a portion of a virtual networks addr space.
   subnet {
     name           = "subnet1"
-    address_prefix = "10.0.1.0/24"
+    address_prefix = "we can give the Subnet Range 01"
   }
 
   subnet {
     name           = "subnet2"
-    address_prefix = "10.0.2.0/24"
+    address_prefix = "the second subnet Range 02"
     security_group = azurerm_network_security_group.Ashwini.id
  
   }
