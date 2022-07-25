@@ -54,6 +54,8 @@ resource "azurerm_virtual_network" "Ashwini" {
 # in same way i think we can create an subnets for both application and database.
 # Once like all this Resource group, Vnet, subnets etc is created we can now create our Virtual machines for our web servers .
 
+# same way we can create 2 more Virtual machines for the environments .
+
 
 resource "azurerm_linux_virtual_machine" "Ashwini" {
   name                = "Vm1"
